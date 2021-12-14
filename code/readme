@@ -1,1 +1,1 @@
-
+Если вдруг не будет работать CMakeLits, то для сборки в командной строке я использовала: gcc -pthread -o out main.cpp threadswork.cpp -lstdc++
