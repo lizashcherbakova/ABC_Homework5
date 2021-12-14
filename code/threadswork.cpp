@@ -53,6 +53,6 @@ void multipleThreadTask(const char *text, int *coded, int length) {
     }
     clock_t end_work_time = clock();
 
-    printf("Creation threads time - %ld ms.\n", end_time - start_time);
-    printf("Working threads time - %ld ms.\n", end_work_time - end_time);
+    printf("Creation threads time - %f s.\n", double(end_time - start_time)/CLOCKS_PER_SEC);
+    printf("Working threads time - %f s.\n", double(end_work_time - end_time)/CLOCKS_PER_SEC);
 }
