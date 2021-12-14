@@ -133,7 +133,7 @@ int main(int argc, char **argv) {
     clock_t start_time = clock();  // Start time for one thread program.
     oneThreadTask(text, coded, length);
     clock_t end_time = clock();   // End time for one thread program.
-    printf("Work time of one thread program - %ld ms\n", end_time - start_time);
+    printf("Work time of one thread program - %f s.\n", double(end_time - start_time)/CLOCKS_PER_SEC);
     printf("Checking started.\n");
     checkResult(coded, text, length);
     printf("***\n");
