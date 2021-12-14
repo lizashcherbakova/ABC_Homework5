@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "threadswork.h"
 
-
+//  Max number of symbols to code.
 const int Max_Size = 214748360;
 
 void errMessage1() {
@@ -65,6 +65,7 @@ void decryptText(const int *codes, char *answer, int size) {
     answer[size] = '\0';
 }
 
+//  Checks that encrypting process was correct.
 void checkResult(const int *answer, const char *initial, int length) {
     if (length < 100) {
         printf("Encrypted text:\n");
