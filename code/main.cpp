@@ -113,7 +113,6 @@ int main(int argc, char **argv) {
             }
         } else {
             printf("%s", "Failed to open input file.\n");
-            fclose(file);
             return 3;
         }
         fclose(file);
